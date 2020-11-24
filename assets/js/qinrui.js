@@ -49,7 +49,7 @@ $(function(){
         });
     });
     
-    $("#loginForm").on("sumbit" , function(e){
+    $("#loginForm").on("submit" , function(e){
         e.preventDefault();
 
         let data = $(this).serialize();

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="text"> -->
+    <button class="set">存储数据</button>
+    <button class="get">获取数据</button>
+    <!-- <button class="remove">删除数据</button>
+    <button class="clear">删除所有数据</button> -->
+    <script>
+        // 获取元素
+        // let inp = document.querySelector("input");
+        let setBtn = document.querySelector(".set");
+        let getBtn = document.querySelector(".get");
+        // let removeBtn = document.querySelector(".remove");
+        // let clearBtn = document.querySelector(".clear");
+
+        let arr = [
+            { id: 1, name: "lw", age: 30 },
+            { id: 1, name: "xm", age: 26 },
+            { id: 1, name: "xhei", age: 32 },
+            { id: 1, name: "ww", age: 19 },
+        ];
+
+
+        setBtn.onclick = function(){
+            let str = JSON.stringify(arr);
+
+            localStorage.setItem( "info" , str);
+        }
+
+        getBtn.onclick = function(){
+
+            let res = localStorage.getItem("info");
+            console.log(res);
+            let data = JSON.parse(res);
+            console.log(data);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // setBtn.onclick = function(){
+        //     sessionStorage.setItem( "name" , inp.value);
+        //     sessionStorage.setItem( "pwd" , "123456")
+        // };
+
+        // getBtn.onclick = function(){
+        //    let res = sessionStorage.getItem( "name");
+        //     console.log(res);
+        // }
+
+        // removeBtn.onclick = function(){
+        //     sessionStorage.removeItem("name");
+        // }
+
+        // clearBtn.onclick = function(){
+        //     sessionStorage.clear();
+        // }
+
+    </script>
+</body>
+
+</html>
