@@ -1,6 +1,6 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 html,
 body{
@@ -11,9 +11,7 @@ body{
 body{
     background: url(/assets/images/login_bg.jpg) no-repeat center/cover;
 }
-.header{
-    margin-top: 20px;
-}
+
 .loginAndResi{
     width: 400px;
     height: 310px;
@@ -23,27 +21,33 @@ body{
     left: 50%;
     transform: translate(-50% , -50%);
 }
+
 .title{
     height: 60px;
     line-height: 60px;
     background: url(/assets/images/login_title.png) no-repeat center;
 }
 
-.bottomBox{
-    display: none;
-}
-.layui-form-item{
+.layui-form{
     padding: 0 30px;
-    position: relative;
 }
+
 #gotoRegi,
 #gotoLogin{
     float: right;
 }
+
+.regiBox{
+    display: none;
+}
+
+.layui-form-item {
+    position: relative;
+  }
 .layui-icon{
     position: absolute;
-    top: 10px;
-    left: 40px;
+  left: 10px;
+  top: 10px;
 }
 
 .layui-input{
